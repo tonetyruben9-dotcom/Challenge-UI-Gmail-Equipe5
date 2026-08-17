@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
+import 'pages/splash_screen.dart';
 
 /// Point d'entrée de l'application Gmail.
 ///

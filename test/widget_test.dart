@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gmail/main.dart';
-import 'package:gmail/screens/splash_screen.dart';
-import 'package:gmail/screens/home_screen.dart';
+import 'package:gmail/pages/splash_screen.dart';
+import 'package:gmail/pages/home_screen.dart';
 import 'package:gmail/widgets/gmail_drawer.dart';
 
 void main() {
