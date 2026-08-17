@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
 
+/// Point d'entrée de l'application Gmail.
+///
+/// Configure le thème Material 3 et lance l'écran splash.
 void main() {
   runApp(const GmailApp());
 }
 
+/// Widget racine de l'application Gmail.
+///
+/// Définit le thème basé sur Material 3 avec une couleur seed bleue.
 class GmailApp extends StatelessWidget {
   const GmailApp({super.key});
 

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Menu latéral (drawer) de l'application Gmail.
+///
+/// Affiche le titre "Gmail" en rouge avec un séparateur en dessous.
 class GmailDrawer extends StatelessWidget {
   const GmailDrawer({super.key});
 

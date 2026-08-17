@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 
+/// Écran de démarrage (splash screen) affiché à l'ouverture de l'app.
+///
+/// Affiche le logo Gmail et "Google Workspace" avec un effet de fondu,
+/// puis redirige vers [HomeScreen] après 4 secondes.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -16,17 +20,21 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
+    // Contrôleur d'animation pour l'effet de fondu (fade in)
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1500),
     );
+    // Animation d'opacité de 0.0 (invisible) à 1.0 (visible)
     _opacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeIn),
     );
     _controller.forward();
 
+    // Redirection vers HomeScreen après 4 secondes de splash
     Future.delayed(const Duration(seconds: 4), () {
       if (mounted) {
+        // Transition en fondu vers l'écran d'accueil
         Navigator.of(context).pushReplacement(
           PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
