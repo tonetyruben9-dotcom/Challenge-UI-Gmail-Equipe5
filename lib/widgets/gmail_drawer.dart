@@ -83,6 +83,19 @@ class GmailDrawer extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
+            const SizedBox(height: 8),
+            const Divider(height: 1, color: Colors.grey),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+              child: Text(
+                'Tous les libellés',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey.shade600,
+                ),
+              ),
+            ),
           ],
         ),
       ),
