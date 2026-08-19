@@ -215,6 +215,17 @@ class GmailDrawer extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
+            const SizedBox(height: 8),
+            const Divider(height: 1, color: Colors.grey),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.apps, color: Colors.black87, size: 22),
+              title: const Text(
+                'Applications Google',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
           ],
         ),
       ),
