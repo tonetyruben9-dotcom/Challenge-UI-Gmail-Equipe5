@@ -114,6 +114,15 @@ class GmailDrawer extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.label_important_outline, color: Colors.black87, size: 22),
+              title: const Text(
+                'Important',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
           ],
         ),
       ),
