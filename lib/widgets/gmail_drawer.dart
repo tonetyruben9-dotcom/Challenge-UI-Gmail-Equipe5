@@ -96,6 +96,15 @@ class GmailDrawer extends StatelessWidget {
                 ),
               ),
             ),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.star_outline, color: Colors.black87, size: 22),
+              title: const Text(
+                'Messages suivis',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
           ],
         ),
       ),
