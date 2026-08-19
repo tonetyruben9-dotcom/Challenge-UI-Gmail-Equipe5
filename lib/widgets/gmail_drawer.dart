@@ -43,7 +43,7 @@ class GmailDrawer extends StatelessWidget {
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
               leading: const Icon(Icons.star_border, color: Colors.black87, size: 22),
               title: const Text(
-                'Important',
+                'Principal',
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
