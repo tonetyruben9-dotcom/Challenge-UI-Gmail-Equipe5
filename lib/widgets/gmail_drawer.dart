@@ -28,6 +28,16 @@ class GmailDrawer extends StatelessWidget {
               ),
             ),
             const Divider(height: 1, color: Colors.grey),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.all_inbox, color: Colors.black87, size: 22),
+              title: const Text(
+                'Toutes les boîtes',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.black87),
+              ),
+            ),
+            const Divider(height: 1, color: Colors.grey),
           ],
         ),
       ),
