@@ -27,10 +27,7 @@ class GmailDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Divider(height: 1, color: Colors.grey),
-            ),
+            const Divider(height: 1, color: Colors.grey),
           ],
         ),
       ),
