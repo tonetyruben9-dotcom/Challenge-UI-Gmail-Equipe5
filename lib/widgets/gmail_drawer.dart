@@ -197,6 +197,15 @@ class GmailDrawer extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.mark_email_read_outlined, color: Colors.black87, size: 22),
+              title: const Text(
+                'Gérer les abonnements',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
           ],
         ),
       ),
