@@ -12,8 +12,8 @@ class GmailDrawer extends StatelessWidget {
       backgroundColor: Colors.white,
       shape: const RoundedRectangleBorder(),
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          padding: EdgeInsets.zero,
           children: [
             Container(
               width: double.infinity,
@@ -194,6 +194,24 @@ class GmailDrawer extends StatelessWidget {
               leading: const Icon(Icons.delete_outline, color: Colors.black87, size: 22),
               title: const Text(
                 'Corbeille',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.check_circle_outline, color: Colors.black87, size: 22),
+              title: const Text(
+                'A Valider',
+                style: TextStyle(fontSize: 14, color: Colors.black87),
+              ),
+            ),
+            ListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              leading: const Icon(Icons.payment, color: Colors.black87, size: 22),
+              title: const Text(
+                'Paiement',
                 style: TextStyle(fontSize: 14, color: Colors.black87),
               ),
             ),
