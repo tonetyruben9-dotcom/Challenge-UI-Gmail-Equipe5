@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gmail/main.dart';
+import 'package:gmail/models/mail.dart';
 import 'package:gmail/pages/splash_screen.dart';
 import 'package:gmail/pages/home_screen.dart';
 import 'package:gmail/widgets/gmail_drawer.dart';
+import 'package:gmail/widgets/mail_card.dart';
 
 void main() {
   group('GmailApp', () {
@@ -74,6 +76,36 @@ void main() {
       await tester.pumpWidget(const MaterialApp(home: HomeScreen()));
       final Scaffold scaffold = tester.widget<Scaffold>(find.byType(Scaffold));
       expect(scaffold.drawer, isNotNull);
+    });
+
+    testWidgets('should display the inbox mail list', (WidgetTester tester) async {
+      await tester.pumpWidget(const MaterialApp(home: HomeScreen()));
+
+      expect(find.byType(MailCard), findsNWidgets(4));
+      expect(find.text('ruben tonety'), findsOneWidget);
+      expect(find.text('Réunion de projet demain'), findsOneWidget);
+      expect(find.text('Bonjour, voici les derniers éléments à préparer.'), findsOneWidget);
+      expect(find.text('17 août'), findsOneWidget);
+    });
+  });
+
+  group('MailCard', () {
+    testWidgets('should display sender initials and mail details', (WidgetTester tester) async {
+      const mail = Mail(
+        sender: 'Jean Martin',
+        subject: 'Objet du message',
+        preview: 'Extrait du message',
+        date: 'Aujourd’hui',
+        avatarColor: Colors.blue,
+      );
+
+      await tester.pumpWidget(const MaterialApp(home: Scaffold(body: MailCard(mail: mail))));
+
+      expect(find.text('JM'), findsOneWidget);
+      expect(find.text('Jean Martin'), findsOneWidget);
+      expect(find.text('Objet du message'), findsOneWidget);
+      expect(find.text('Extrait du message'), findsOneWidget);
+      expect(find.text('Aujourd’hui'), findsOneWidget);
     });
   });
 
