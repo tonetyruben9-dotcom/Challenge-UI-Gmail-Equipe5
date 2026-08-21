@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../models/mail.dart';
+import '../pages/mail_detail_screen.dart';
 
+/// Carte affichant un résumé d'un mail dans la liste de réception.
+///
+/// Au tap, navigue vers [MailDetailScreen] pour afficher le contenu complet.
 class MailCard extends StatelessWidget {
   const MailCard({required this.mail, super.key});
 
@@ -12,7 +16,13 @@ class MailCard extends StatelessWidget {
     final foregroundColor = mail.isRead ? Colors.grey.shade700 : Colors.black87;
 
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => MailDetailScreen(mail: mail),
+          ),
+        );
+      },
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         child: Row(

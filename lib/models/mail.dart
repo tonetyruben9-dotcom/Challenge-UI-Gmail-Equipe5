@@ -7,6 +7,7 @@ class Mail {
     required this.preview,
     required this.date,
     required this.avatarColor,
+    this.body = '',
     this.isRead = false,
   });
 
@@ -15,6 +16,7 @@ class Mail {
   final String preview;
   final String date;
   final Color avatarColor;
+  final String body;
   final bool isRead;
 
   String get initials {

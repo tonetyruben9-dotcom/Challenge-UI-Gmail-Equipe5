@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'main_screen.dart';
 
 /// Écran de démarrage (splash screen) affiché à l'ouverture de l'app.
 ///
@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen>
         Navigator.of(context).pushReplacement(
           PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
-                const HomeScreen(),
+                const MainScreen(),
             transitionsBuilder: (context, animation, secondaryAnimation, child) {
               return FadeTransition(opacity: animation, child: child);
             },
@@ -63,24 +63,26 @@ class _SplashScreenState extends State<SplashScreen>
         opacity: _opacityAnimation,
         child: Column(
           children: [
-            const Spacer(flex: 3),
+            const Spacer(flex: 2),
             Center(
               child: Image.asset(
                 'assets/gmail_logo.png',
-                width: 100,
-                height: 100,
+                width: 200,
+                height: 200,
               ),
             ),
-            const SizedBox(height: 30),
-            Text(
-              'Google Workspace',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.grey.shade600,
-                letterSpacing: 0.5,
+            const Spacer(flex: 1),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 48),
+              child: Text(
+                'Google Workspace',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey.shade600,
+                  letterSpacing: 0.5,
+                ),
               ),
             ),
-            const Spacer(flex: 3),
           ],
         ),
       ),
