@@ -4,6 +4,7 @@ import '../widgets/gmail_drawer.dart';
 import '../widgets/mail_card.dart';
 import 'mail_detail_screen.dart';
 import 'compose_screen.dart';
+import 'search_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -49,8 +50,8 @@ class _MainScreenState extends State<MainScreen> {
       body: 'Bonjour Koffi Levis AKALETE,\n\n'
           'Voici le résumé de votre progression dans la plateforme '
           'E-learning SIG Niger :\n\n'
-          '- Modules complétés : 0/6\n'
-          '- Progression : 0%\n\n'
+          '- Modules complétés : 4/6\n'
+          '- Progression : 60%\n\n'
           'Commencez dès maintenant votre premier module.\n\n'
           'L\'équipe E-learning SIG Niger',
     ),
@@ -198,24 +199,31 @@ class _MainScreenState extends State<MainScreen> {
               onPressed: () => Scaffold.of(context).openDrawer(),
             ),
           ),
-          title: Container(
-            height: 44,
-            decoration: BoxDecoration(
-              color: const Color(0xFFF1F3F4),
-              borderRadius: BorderRadius.circular(24),
-            ),
-            child: Row(
-              children: [
-                const SizedBox(width: 12),
-                Icon(Icons.search, color: Colors.grey.shade500, size: 22),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Text(
-                    'Rechercher dans les messages',
-                    style: TextStyle(color: Colors.grey.shade500, fontSize: 16),
+          title: GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SearchScreen()),
+              );
+            },
+            child: Container(
+              height: 44,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF1F3F4),
+                borderRadius: BorderRadius.circular(24),
+              ),
+              child: Row(
+                children: [
+                  const SizedBox(width: 12),
+                  Icon(Icons.search, color: Colors.grey.shade500, size: 22),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      'Rechercher dans les messages',
+                      style: TextStyle(color: Colors.grey.shade500, fontSize: 16),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           actions: [
