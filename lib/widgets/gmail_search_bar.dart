@@ -55,7 +55,7 @@ class _GmailSearchBarState extends State<GmailSearchBar> {
         duration: const Duration(milliseconds: 200),
         height: 48,
         decoration: BoxDecoration(
-          color: const Color(0xFFEEF0F2),
+          color: const Color(0xFFF1F3F4),
           borderRadius: BorderRadius.circular(24),
         ),
         child: Row(
@@ -125,7 +125,7 @@ class _GmailSearchBarState extends State<GmailSearchBar> {
                   padding: const EdgeInsets.only(right: 8, left: 2),
                   child: CircleAvatar(
                     radius: 15,
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: Color(0xFF4285F4),
                     child: Text(
                       widget.avatarInitial,
                       style: const TextStyle(

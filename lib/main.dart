@@ -21,7 +21,7 @@ class GmailApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
+          seedColor: Color(0xFF0B57D0),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
