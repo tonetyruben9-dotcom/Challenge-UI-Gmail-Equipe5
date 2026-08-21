@@ -46,13 +46,11 @@ Gmail
 - Le build Gradle prenait beaucoup de temps (timeout après 10 minutes)
 - La conformité exacte du layout Gmail (position de l'avatar, onglets, bottom bar)
 - La navigation complexe entre le drawer et tous les écrans
-- Analyse OCR des images de référence pour reproduire fidèlement le UI
 
 ## Solutions
 - Utilisation de `flutter clean` et `flutter pub get` avant chaque build
 - Création d'un écran `LabelScreen` réutilisable pour chaque item du drawer
 - Séparation de l'avatar hors de la barre de recherche conformément au design Gmail
-- Extraction du texte des images de référence pour la conformité
 
 ## Screenshots
 ![Inbox](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-31-58.png)
@@ -65,7 +63,7 @@ Gmail
 ![Label](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-33-32.png)
 
 ## Vidéo
-À venir
+[video/Screencast From 2026-08-21 19-00-54.mp4](video/Screencast%20From%202026-08-21%2019-00-54.mp4)
 
 ## APK
 `Gmail-Equipe5.apk` dans le dossier racine du projet
