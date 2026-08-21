@@ -41,18 +41,6 @@ class _MainScreenState extends State<MainScreen> {
           'Please check your imports and try again.\n\nBest,\nThe Vercel Team',
     ),
     Mail(
-      sender: 'moi',
-      subject: '[Site] Demande de prière',
-      preview: 'AD Niamey 2000 Assemblée de Dieu...',
-      date: '20 août',
-      avatarColor: Color(0xFF34A853),
-      body: 'AD Niamey 2000 Assemblée de Dieu\n\n'
-          'Demande de prière : Merci de prier pour la réussite de notre '
-          'projet de challenge Flutter. Que Dieu nous donne la sagesse '
-          'et la force pour mener à bien cette tâche.\n\n'
-          'Fraternement,\nLa communauté AD Niamey 2000',
-    ),
-    Mail(
       sender: 'E-learning SIG Niger',
       subject: 'Votre progression — E-learning SIG',
       preview: 'Bonjour Koffi Levis AKALETE, Module...',
