@@ -55,14 +55,14 @@ Gmail
 - Extraction du texte des images de référence pour la conformité
 
 ## Screenshots
-![Inbox](screenshots/01_inbox.png)
-![Drawer](screenshots/02_drawer.png)
-![Mail Detail](screenshots/03_mail_detail.png)
-![Compose](screenshots/04_compose.png)
-![Search](screenshots/05_search.png)
-![Profile](screenshots/06_profile.png)
-![Meet](screenshots/07_meet.png)
-![Label](screenshots/08_label_principale.png)
+![Inbox](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-31-58.png)
+![Drawer](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-32-13.png)
+![Mail Detail](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-32-28.png)
+![Compose](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-32-42.png)
+![Search](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-32-52.png)
+![Profile](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-33-12.png)
+![Meet](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-33-26.png)
+![Label](Screenshot%20Realisation/Screenshot%20From%202026-08-21%2018-33-32.png)
 
 ## Vidéo
 À venir
